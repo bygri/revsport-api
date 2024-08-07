@@ -1,0 +1,29 @@
+[project]
+name = "revsport-api"
+version = "0.0.0"
+description = "Unofficial API to revsolutioniseSPORT team management app"
+authors = [
+  {email="toby@tobygriffin.dev"},
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+]
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4~=4.12",
+  "requests~=2.32",
+  "pyotp~=2.9",
+]
+
+[project.scripts]
+revsport = "revsport:execute_cli"
+
+[project.urls]
+Homepage = "https://github.com/bygri/revsport-api"
+Repository = "https://github.com/bygri/revsport-api.git"
+Issues = "https://github.com/bygri/revsport-api/issues"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
